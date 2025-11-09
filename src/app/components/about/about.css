@@ -1,0 +1,152 @@
+.about {
+  background: linear-gradient(135deg, #FDFBFF 0%, #F5F3FF 100%);
+  padding: 80px 0;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-main {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-main h3 {
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-main p {
+  font-size: 1.125rem;
+  color: #6B7280;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.benefit {
+  text-align: center;
+  padding: 32px 24px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 2px solid #F3F4F6;
+  transition: all 0.3s ease;
+}
+
+.benefit:hover {
+  border-color: var(--secondary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 179, 175, 0.12);
+}
+
+.benefit-icon {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+}
+
+.benefit-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--secondary-color);
+  stroke-width: 2;
+}
+
+.benefit h4 {
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.benefit p {
+  color: #6B7280;
+  font-size: 0.9375rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.about-location {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.location-info {
+  text-align: center;
+}
+
+.location-info h4 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.location-info p {
+  color: var(--text-dark);
+  font-size: 1.125rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-main {
+    margin-bottom: 48px;
+  }
+
+  .about-main h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-main p {
+    font-size: 1rem;
+  }
+
+  .about-benefits {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+
+  .benefit {
+    padding: 24px 16px;
+  }
+
+  .about-location {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-location {
+    grid-template-columns: 1fr;
+  }
+}
