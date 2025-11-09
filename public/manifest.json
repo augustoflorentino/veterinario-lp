@@ -1,0 +1,22 @@
+{
+  "name": "Personal Vet - Atendimento Veterinário Domiciliar",
+  "short_name": "Personal Vet",
+  "description": "Atendimento veterinário domiciliar 24h em Uberlândia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7B3FF2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
